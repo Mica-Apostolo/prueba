@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contenedorPadre{
+    width: 90%;
+    flex-direction: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header header"
+    "main main empty aside"
+    "footer footer footer footer";
+    gap: 10px;
+    justify-items: center;
+}
+.contenedorHijo{
+            padding: 30px;
+            width: 100%;
+            display: flex;
+}
+.header{
+    background-color: rgb(252, 118, 118);
+    grid-area: header;
+}
+.main{
+    background-color: cadetblue;
+    grid-area: main;
+}
+.aside{
+    background-color: rgb(245, 146, 110);
+    grid-area: aside;
+}
+.footer{
+    background-color: rgb(78, 211, 78);
+    grid-area: footer;
+}
